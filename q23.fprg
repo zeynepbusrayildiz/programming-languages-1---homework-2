@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Casper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-14 12:03:38 &#214;&#214;"/>
+        <attribute name="created" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTExLTA0OzA4OjIxOjU1IMOWUzszMTA0"/>
+        <attribute name="edited" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTExLTA0OzA5OjIzOjE1IMOWUzs4OzMyMTg="/>
+        <attribute name="edited" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTE0OzEyOjAzOjM4IMOWw5Y7MTsyNjE1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="binary, decimal, power, rem, temp, digit, rev, last, out, cnt, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter a decimal number:&quot;" newline="True"/>
+            <input variable="decimal"/>
+            <assign variable="binary" expression="0"/>
+            <assign variable="power" expression="2^0"/>
+            <assign variable="rem" expression="0"/>
+            <assign variable="digit" expression="0"/>
+            <while expression="decimal!=0">
+                <assign variable="rem" expression="decimal%2"/>
+                <assign variable="rem" expression="rem+1"/>
+                <assign variable="binary" expression="binary*10+rem"/>
+                <assign variable="decimal" expression="decimal/2"/>
+            </while>
+            <assign variable="temp" expression="binary"/>
+            <while expression="temp!=0">
+                <assign variable="temp" expression="temp/10"/>
+                <assign variable="digit" expression="digit+1"/>
+            </while>
+            <assign variable="i" expression="digit"/>
+            <assign variable="rev" expression="0"/>
+            <assign variable="temp" expression="binary"/>
+            <assign variable="last" expression="temp%10"/>
+            <assign variable="temp" expression="temp/10"/>
+            <assign variable="rev" expression="rev+last*10^(digit-1)"/>
+            <assign variable="digit" expression="digit-1"/>
+            <while expression="temp!=0">
+                <assign variable="last" expression="temp%10"/>
+                <assign variable="temp" expression="temp/10"/>
+                <assign variable="rev" expression="rev+last*10^(digit-1)"/>
+                <assign variable="digit" expression="digit-1"/>
+            </while>
+            <assign variable="cnt" expression="0"/>
+            <assign variable="out" expression="0"/>
+            <while expression="i!=0">
+                <assign variable="out" expression="out+10^cnt"/>
+                <assign variable="i" expression="i-1"/>
+                <assign variable="cnt" expression="cnt+1"/>
+                <output expression="out" newline="True"/>
+            </while>
+            <assign variable="binary" expression="rev-out"/>
+            <output expression="&quot;The number you entered in binary is &quot;&amp;binary" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

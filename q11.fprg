@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-12 09:26:27 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTEyOzA5OjA3OjUyIMOWUzsyMzgw"/>
+        <attribute name="edited" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTEyOzA5OjI2OjI3IMOWUzs4OzI0OTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, sum, cnt, temp" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter a number:&quot;" newline="True"/>
+            <input variable="num"/>
+            <assign variable="temp" expression="num"/>
+            <assign variable="cnt" expression="1"/>
+            <assign variable="sum" expression="0"/>
+            <while expression="temp&gt;0">
+                <if expression="num%cnt==0">
+                    <then>
+                        <assign variable="sum" expression="sum+cnt"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="cnt" expression="cnt+1"/>
+                <if expression="cnt==num">
+                    <then>
+                        <assign variable="temp" expression="0"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <if expression="sum==num">
+                <then>
+                    <output expression="&quot;This number is a perfect number.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;This number is not a perfect number.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

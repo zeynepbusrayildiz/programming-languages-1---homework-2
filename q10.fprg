@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-14 09:38:31 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTE0OzA5OjA1OjE4IMOWUzsyMzgy"/>
+        <attribute name="edited" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTE0OzA5OjM4OjMxIMOWUzsxOzI0OTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, temp, i, j, k, digit, sum" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="j" expression="1"/>
+            <assign variable="i" expression="1"/>
+            <assign variable="digit" expression="0"/>
+            <assign variable="k" expression="0"/>
+            <while expression="i&lt;=n">
+                <assign variable="j" expression="i"/>
+                <while expression="j!=0">
+                    <assign variable="j" expression="j/10"/>
+                    <assign variable="digit" expression="digit+1"/>
+                </while>
+                <assign variable="j" expression="i"/>
+                <assign variable="sum" expression="0"/>
+                <while expression="j!=0">
+                    <assign variable="k" expression="j%10"/>
+                    <assign variable="sum" expression="sum+k^digit"/>
+                    <assign variable="j" expression="j/10"/>
+                </while>
+                <if expression="sum==i">
+                    <then>
+                        <output expression="i" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

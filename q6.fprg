@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Casper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-08 10:45:57 &#214;S"/>
+        <attribute name="created" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTEwLTMxOzExOjI5OjQzIMOWUzszMTAy"/>
+        <attribute name="edited" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTExLTAxOzEyOjIyOjA2IMOWw5Y7MTA7MzM4MA=="/>
+        <attribute name="edited" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTA4OzEwOjQ1OjU3IMOWUzsxOzI0OTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ebob, n1, n2, i, ekok" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter the first number:&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Please enter the second number:&quot;" newline="True"/>
+            <input variable="n2"/>
+            <assign variable="i" expression="1"/>
+            <assign variable="ebob" expression="1"/>
+            <if expression="n1&lt;n2">
+                <then>
+                    <while expression="i&lt;=n1">
+                        <if expression="n1%i==0&amp;&amp;n2%i==0">
+                            <then>
+                                <assign variable="ebob" expression="i"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <assign variable="i" expression="i+1"/>
+                    </while>
+                </then>
+                <else>
+                    <if expression="n1==n2">
+                        <then>
+                            <assign variable="ebob" expression="n1"/>
+                        </then>
+                        <else>
+                            <while expression="i&lt;=n2">
+                                <if expression="n1%i==0&amp;&amp;n2%i==0">
+                                    <then>
+                                        <assign variable="ebob" expression="i"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                                <assign variable="i" expression="i+1"/>
+                            </while>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="n1" expression="n1/ebob"/>
+            <assign variable="n2" expression="n2/ebob"/>
+            <assign variable="ekok" expression="ebob*n1*n2"/>
+            <output expression="ekok" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

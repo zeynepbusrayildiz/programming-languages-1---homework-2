@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-12 09:01:11 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTEyOzA4OjQ3OjA5IMOWUzsyMzg1"/>
+        <attribute name="edited" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTEyOzA5OjAxOjExIMOWUzs1OzI0ODE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <declare name="result" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter n value:&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="result" expression="1"/>
+            <assign variable="i" expression="2"/>
+            <while expression="i&lt;=n">
+                <assign variable="result" expression="result+1/i"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="result" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

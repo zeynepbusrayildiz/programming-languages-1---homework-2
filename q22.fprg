@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-14 11:29:03 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTE0OzExOjI0OjEzIMOWUzsyMzcx"/>
+        <attribute name="edited" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTE0OzExOjI5OjAzIMOWUzs0OzI0ODY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, cnt, sum" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="108"/>
+            <assign variable="cnt" expression="0"/>
+            <assign variable="sum" expression="0"/>
+            <while expression="a&lt;200">
+                <assign variable="sum" expression="sum+a"/>
+                <assign variable="a" expression="a+9"/>
+                <assign variable="cnt" expression="cnt+1"/>
+            </while>
+            <output expression="&quot;Sum of the numbers is &quot;&amp;sum" newline="True"/>
+            <output expression="&quot;There are &quot;&amp;cnt&amp;&quot; numbers.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

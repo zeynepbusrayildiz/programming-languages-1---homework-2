@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-08 10:14:37 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTA4OzEwOjA0OjM2IMOWUzsyMzc2"/>
+        <attribute name="edited" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTA4OzEwOjE0OjM3IMOWUzszOzI0ODg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, delta" type="Integer" array="False" size=""/>
+            <declare name="r1, r2" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter the values of a, b, c in ax^2+bx+c&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="delta" expression="b^2-4*a*c"/>
+            <if expression="delta&gt;0">
+                <then>
+                    <assign variable="r1" expression="(-b+delta^(1/2))/(2*a)"/>
+                    <assign variable="r2" expression="(-b-delta^(1/2))/(2*a)"/>
+                    <output expression="r1" newline="True"/>
+                    <output expression="r2" newline="True"/>
+                </then>
+                <else>
+                    <if expression="delta&lt;0">
+                        <then>
+                            <output expression="&quot;No real roots.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="r1" expression="-b/(2*a)"/>
+                            <assign variable="r2" expression="r1"/>
+                            <output expression="r1" newline="True"/>
+                            <output expression="r2" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

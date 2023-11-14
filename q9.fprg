@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-12 12:43:11 &#214;&#214;"/>
+        <attribute name="created" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTEyOzEyOjI0OjUzIMOWw5Y7MjUwNQ=="/>
+        <attribute name="edited" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTEyOzEyOjQzOjExIMOWw5Y7NzsyNjE0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, temp, digit, sum, a" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter a number:&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="temp" expression="n"/>
+            <assign variable="digit" expression="0"/>
+            <assign variable="a" expression="0"/>
+            <while expression="temp!=0">
+                <assign variable="digit" expression="digit+1"/>
+                <assign variable="temp" expression="temp/10"/>
+            </while>
+            <assign variable="sum" expression="0"/>
+            <assign variable="temp" expression="n"/>
+            <while expression="temp&gt;0">
+                <assign variable="a" expression="temp%10"/>
+                <assign variable="temp" expression="temp/10"/>
+                <assign variable="sum" expression="sum+a^digit"/>
+            </while>
+            <output expression="sum" newline="True"/>
+            <if expression="sum==n">
+                <then>
+                    <output expression="&quot;This number is an Armstrong number.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;This number is not an Armstrong number.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

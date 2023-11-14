@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-14 11:42:25 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTE0OzExOjI5OjMwIMOWUzsyMzc1"/>
+        <attribute name="edited" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTE0OzExOjQyOjI1IMOWUzsyOzI0ODM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, row, current, spacecnt, coefficient" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="row" expression="0"/>
+            <assign variable="current" expression="1"/>
+            <while expression="row&lt;n">
+                <assign variable="spacecnt" expression="n-row-1"/>
+                <output expression="spacecnt" newline="True"/>
+                <assign variable="coefficient" expression="1"/>
+                <while expression="current&lt;=row">
+                    <output expression="coefficient" newline="True"/>
+                    <assign variable="coefficient" expression="coefficient*(row-current+1)/current"/>
+                    <assign variable="current" expression="current+1"/>
+                </while>
+                <assign variable="row" expression="row+1"/>
+                <assign variable="current" expression="1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

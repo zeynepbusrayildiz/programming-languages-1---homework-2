@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Casper"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-04 11:22:53 &#214;S"/>
+        <attribute name="created" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTExLTA0OzEyOjU0OjU2IMOWw5Y7MzIzNw=="/>
+        <attribute name="edited" value="Q2FzcGVyO0RFU0tUT1AtUk5MQUVLNDsyMDIzLTExLTA0OzExOjIyOjUzIMOWUzs3OzMyMTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, rev, temp, i, a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter a number:&quot;" newline="True"/>
+            <input variable="num"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="temp" expression="num"/>
+            <assign variable="rev" expression="0"/>
+            <while expression="temp!=0">
+                <assign variable="temp" expression="temp/10"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <assign variable="temp" expression="num"/>
+            <assign variable="a" expression="temp%10"/>
+            <assign variable="temp" expression="temp/10"/>
+            <assign variable="rev" expression="rev+a*10^(i-1)"/>
+            <assign variable="i" expression="i-1"/>
+            <while expression="temp!=0">
+                <assign variable="a" expression="temp%10"/>
+                <assign variable="temp" expression="temp/10"/>
+                <assign variable="rev" expression="rev+a*10^(i-1)"/>
+                <assign variable="i" expression="i-1"/>
+            </while>
+            <if expression="num==rev">
+                <then>
+                    <output expression="num&amp;&quot; is a palindrome.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="num&amp;&quot; is not a palindrome&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-14 10:56:02 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTE0OzA5OjQxOjQzIMOWUzsyMzgw"/>
+        <attribute name="edited" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTE0OzEwOjU2OjAyIMOWUzsyOzI0ODI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, element, i, l, f" type="Integer" array="False" size=""/>
+            <declare name="res" type="Real" array="False" size=""/>
+            <assign variable="res" expression="1"/>
+            <input variable="element"/>
+            <input variable="x"/>
+            <assign variable="i" expression="2"/>
+            <assign variable="f" expression="1"/>
+            <assign variable="l" expression="1"/>
+            <while expression="i&lt;=element">
+                <while expression="l&lt;=i">
+                    <assign variable="f" expression="f*l"/>
+                    <assign variable="l" expression="l+1"/>
+                </while>
+                <assign variable="l" expression="1"/>
+                <if expression="i%2==0">
+                    <then>
+                        <assign variable="res" expression="res-((x^i)/f)"/>
+                    </then>
+                    <else>
+                        <assign variable="res" expression="res+((x^i)/f)"/>
+                    </else>
+                </if>
+                <assign variable="i" expression="i+1"/>
+                <assign variable="f" expression="1"/>
+            </while>
+            <output expression="res" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

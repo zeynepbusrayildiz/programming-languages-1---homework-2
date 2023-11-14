@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-08 10:04:15 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTA4OzA3OjQ0OjU1IMOWUzsyMzg3"/>
+        <attribute name="edited" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTA4OzEwOjA0OjE1IMOWUzsyOzI0ODI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="area, perimeter, e1, e2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter long and short edges of the rectangle:&quot;" newline="True"/>
+            <input variable="e1"/>
+            <input variable="e2"/>
+            <assign variable="area" expression="e1*e2"/>
+            <assign variable="perimeter" expression="2*(e1+e2)"/>
+            <output expression="&quot;Area of the rectangle is &quot;&amp;area&amp;&quot; and the perimeter is &quot;&amp;perimeter" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

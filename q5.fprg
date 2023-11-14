@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-12 09:06:56 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTA4OzEwOjIwOjQ4IMOWUzsyMzc3"/>
+        <attribute name="edited" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTEyOzA5OjA2OjU2IMOWUzszOzI0OTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, result" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <assign variable="result" expression="1"/>
+            <while expression="i&lt;5">
+                <assign variable="result" expression="result*2"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="result" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

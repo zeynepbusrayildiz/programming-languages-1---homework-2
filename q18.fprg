@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-14 11:44:17 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTE0OzExOjQyOjMyIMOWUzsyMzcy"/>
+        <attribute name="edited" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTE0OzExOjQ0OjE3IMOWUzs0OzI0ODg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;1&quot;" newline="True"/>
+            <output expression="&quot;01&quot;" newline="True"/>
+            <output expression="&quot;101&quot;" newline="True"/>
+            <output expression="&quot;0101&quot;" newline="True"/>
+            <output expression="&quot;10101&quot;" newline="True"/>
+            <comment text="im sorry i tried so hard for this question but couldnt come up with anything..."/>
+        </body>
+    </function>
+</flowgorithm>

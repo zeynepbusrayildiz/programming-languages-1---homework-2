@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-13 10:53:20 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTEzOzEwOjQwOjM2IMOWUzsyMzcy"/>
+        <attribute name="edited" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTExLTEzOzEwOjUzOjIwIMOWUzs3OzI0ODM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, x, i" type="Integer" array="False" size=""/>
+            <declare name="res" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter x value.&quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;Please enter the number of elements you want.&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="res" expression="x-x^3"/>
+            <assign variable="i" expression="5"/>
+            <while expression="n&gt;2">
+                <assign variable="res" expression="res+x^i"/>
+                <assign variable="n" expression="n-1"/>
+                <assign variable="i" expression="i+2"/>
+            </while>
+            <output expression="res" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
